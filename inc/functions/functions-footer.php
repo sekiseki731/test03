@@ -20,10 +20,10 @@ add_action('talon_footer', 'talon_footer_sidebar', 7);
  */
 function talon_footer_credits() {
 	?>
-		<div class="site-info col-md-6">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'talon' ) ); ?>" rel="nofollow"><?php printf( esc_html__( 'Powered by %s', 'talon' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %2$s by %1$s.', 'talon' ), 'aThemes', '<a href="//athemes.com/theme/talon" rel="designer">Talon</a>' ); ?>
+		<div class="site-info col-md-12">
+					<p>No information or images from this website may be reused or reproduced without authorization.</p>
+			<hr>
+					<p>68 Fukakusa Yabunouchi-cho, Fushimi-ku, Kyoto City 612-0882　Phone (075) 641-7331　Fax (075) 642-2153</p>
 		</div><!-- .site-info -->
 	<?php
 }
@@ -34,9 +34,9 @@ add_action('talon_footer', 'talon_footer_credits', 8);
  */
 function talon_footer_menu() {
 	?>
-		<nav id="footer-navigation" class="footer-navigation col-md-6" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu', 'depth' => 1 ) ); ?>
-		</nav>
+			<div class="footer_license" style="float:right">
+				<p>Copyright © Fushimi Inari Taisha, All Rights Reserved.</p>
+			</div>
 	<?php
 }
 add_action('talon_footer', 'talon_footer_menu', 9);

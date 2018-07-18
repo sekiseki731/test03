@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <div class="row">
-	<div id="primary" class="content-area col-md-8 <?php echo esc_attr(talon_blog_layout()); ?>">
+	<div id="primary" class="content-area col-md-12 <?php echo esc_attr(talon_blog_layout()); ?>">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>

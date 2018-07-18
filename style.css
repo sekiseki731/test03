@@ -4,7 +4,7 @@ Theme URI: http://athemes.com/theme/talon
 Author: aThemes
 Author URI: http://athemes.com
 Description: Talon is a multipurpose business theme built using the latest technologies. It's equally suited for both freelancers or companies and features an optimum level of customization oportunities.
-Version: 1.04
+Version: 1.06
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: talon
@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #2d3142;
+	color: #FFF;
 	font-family: 'Noto Sans', sans-serif;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -70,7 +70,7 @@ table {
 	border: 1px solid #e0e0e0;
 }
 th {
-	background-color: #f9f9f9;
+	background-color: #000;
 }
 table > thead > tr > th,
 table > tbody > tr > th,
@@ -246,7 +246,7 @@ textarea:-ms-textarea-placeholder {
 /*-------------------------------------------------------------------------*/
 .site-footer {
 	background: #2E3142;
-	padding: 120px 0;
+	padding: 10px 0;
 }
 .footer-widgets .widget {
 	margin-bottom: 30px;
@@ -256,14 +256,12 @@ textarea:-ms-textarea-placeholder {
 }
 .site-footer .widget-title {
 	color: #fff;
-	font-size: 13px;
+	font-size: 11px;
 	text-transform: uppercase;
 	margin-bottom: 30px;
 	margin-top: 0;
 }
-.site-footer a {
-	color: #4f5d75;
-}
+
 .site-footer a:hover {
 	color: #fff;
 }
@@ -276,6 +274,24 @@ textarea:-ms-textarea-placeholder {
 .site-info {
 	margin-top: 40px;
 }
+.site-footer p{
+	font-size:11px;
+}
+.site-info p{
+	font-size:11px!important;
+	color:#AAAAAA!important;
+}
+
+.site-info hr{
+	color:#EB5C1E!important;
+}
+
+.footer_license p{
+	font-size:8px!important;
+	color:#EB5C1E!important;
+	text-align:right!important;
+}
+
 .footer-navigation {
 	text-align: right;
 }
@@ -886,22 +902,25 @@ textarea:-ms-textarea-placeholder {
 /* Blog style
 /*----------------------------------*/
 .site-content {
-	margin: 60px 0;
+	margin: 5px 0;
 }
 .sticky {
 	display: block;
 }
 .hentry {
-	margin: 0 0 40px;
-	padding: 30px;
-	background-color: #fff;
+	margin: 0 0 0px;
+	padding: 0px;
+	background-color: #000;
 	-webkit-box-shadow: 0px 0px 32px 0px rgba(122,122,122,0.1);
 	-moz-box-shadow: 0px 0px 32px 0px rgba(122,122,122,0.1);
 	box-shadow: 0px 0px 32px 0px rgba(122,122,122,0.1);	
+	color:#FFF;
 }
-.page .entry-title {
-	margin: 0 0 40px;
+
+.hentry h1{
+	text-align:center;
 }
+
 .content-area.fullwidth {
 	width: 100%;
 }
@@ -2346,7 +2365,7 @@ img {
 }
 .mobile-branding .site-branding {
 	margin-left: 0;
-	text-align: left;
+	text-align: center;
 }
 .site-title {
 	line-height: 1.2;
